@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JxShellDotnet4</RootNamespace>
+    <AssemblyName>JxShellDotnet4</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\deleteWrapper.cs" />
+    <Compile Include="src\delegateWrapperStatic.cs" />
+    <Compile Include="src\enumWrapper.cs" />
+    <Compile Include="src\fieldDescriptor.cs" />
+    <Compile Include="src\invoker.cs" />
+    <Compile Include="src\invokerParam.cs" />
+    <Compile Include="src\invokerParam0.cs" />
+    <Compile Include="src\invokerParam1.cs" />
+    <Compile Include="src\invokerParam2.cs" />
+    <Compile Include="src\invokerParam3.cs" />
+    <Compile Include="src\invokerParam4.cs" />
+    <Compile Include="src\invokerParam5.cs" />
+    <Compile Include="src\invokerParam6.cs" />
+    <Compile Include="src\invokerParam7.cs" />
+    <Compile Include="src\invokerParam8.cs" />
+    <Compile Include="src\invokerParam9.cs" />
+    <Compile Include="src\Manager.cs" />
+    <Compile Include="src\memberDescriptor.cs" />
+    <Compile Include="src\methodDescriptor.cs" />
+    <Compile Include="src\propertyDescriptor.cs" />
+    <Compile Include="src\typeDescriptor.cs" />
+    <Compile Include="src\wrapper.cs" />
+    <Compile Include="src\wrapperBase.cs" />
+    <Compile Include="src\wrapperStatic.cs" />
+    <Compile Include="src\type_1.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\JxShellBase\JxShellBase.csproj">
+      <Project>{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}</Project>
+      <Name>JxShellBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+  </ItemGroup>
+</Project>
