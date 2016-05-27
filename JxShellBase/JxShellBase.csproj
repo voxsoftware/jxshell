@@ -6,7 +6,7 @@
     <ProjectGuid>{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>JxShellBase</RootNamespace>
-    <AssemblyName>jxshell</AssemblyName>
+    <AssemblyName>jxshellbase</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

@@ -262,11 +262,11 @@ namespace jxshell
 			}
 			if (environment.windows)
 			{
-				environment.environmentPath = environment.addBs(Path.GetPathRoot(Environment.GetFolderPath(Environment.SpecialFolder.System))) + "70\\";
+				environment.environmentPath = environment.addBs(Path.GetPathRoot(Environment.GetFolderPath(Environment.SpecialFolder.System))) + ".jxshell\\";
 			}
 			else
 			{
-				environment.environmentPath = Environment.GetEnvironmentVariable("home") + "/70/";
+				environment.environmentPath = Environment.GetEnvironmentVariable("HOME") + "/.jxshell/";
 			}
 			environment.commonLibraryPath = environment.addBs(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)) + "70/library/";
 			environment.commonApplicationsPath = environment.addBs(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)) + "70/applications/";

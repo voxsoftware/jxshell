@@ -39,11 +39,13 @@ namespace jxshell
 			this.cp = new CSharpCodeProvider();
 			this.p.GenerateInMemory = false;
 			this.p.GenerateExecutable = false;
-			FileStream fileStream = new FileStream(Path.GetDirectoryName(environment.executableFile) + "/jxshell.default.cs", FileMode.Open, FileAccess.Read);
-			StreamReader streamReader = new StreamReader(fileStream);
-			this.sourceDefault = streamReader.ReadToEnd();
-			streamReader.Close();
-			fileStream.Close();
+
+			// Se quitó el source Default ...
+			//FileStream fileStream = new FileStream(Path.GetDirectoryName(environment.executableFile) + "/jxshell.default.cs", FileMode.Open, FileAccess.Read);
+			//StreamReader streamReader = new StreamReader(fileStream);
+			//this.sourceDefault = streamReader.ReadToEnd();
+			//streamReader.Close();
+			//fileStream.Close();
 		}
 
 		/*

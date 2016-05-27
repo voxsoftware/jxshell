@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Threading;
 using RPCJson;
+//using System.Windows.Forms;
+using System.IO;
 
 namespace ClrForAll
 {
@@ -47,6 +49,8 @@ namespace ClrForAll
 		{
 			try
 			{
+
+				//File.WriteAllText("/Users/james/commands.log", Newtonsoft.Json.JsonConvert.SerializeObject(cmd));
 				object[] args;
 				if (cmd.arguments != null)
 				{
