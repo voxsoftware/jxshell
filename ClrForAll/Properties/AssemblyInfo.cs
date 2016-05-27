@@ -4,14 +4,13 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("JxShell")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyTitle ("ClrForAll")]
+[assembly: AssemblyDescription ("Ejecute código CLR desde otros lenguajes sin compilación")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
-[assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("james")]
-[assembly: AssemblyTrademark ("")]
-[assembly: AssemblyCulture ("")]
+[assembly: AssemblyCompany ("VoxSoftware")]
+[assembly: AssemblyProduct ("ClrForAll")]
+[assembly: AssemblyCopyright ("VoxSoftware 2016")]
+[assembly: AssemblyTrademark ("ClrForAll")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,

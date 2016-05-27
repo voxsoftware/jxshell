@@ -3,10 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}</ProjectGuid>
+    <ProjectGuid>{45F1400E-EE20-4B49-A432-6AC09C1C7170}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>JxShellBase</RootNamespace>
-    <AssemblyName>jxshell</AssemblyName>
+    <RootNamespace>RPCJson</RootNamespace>
+    <AssemblyName>RPCJson</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,20 +29,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\csharplanguage.cs" />
-    <Compile Include="src\csharplanguageengine.cs" />
-    <Compile Include="src\language.cs" />
-    <Compile Include="src\languageengine.cs" />
-    <Compile Include="Properties\assembly.cs" />
-    <Compile Include="src\environment.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Argument.cs" />
+    <Compile Include="src\Command.cs" />
+    <Compile Include="src\CommandLine.cs" />
+    <Compile Include="src\Objects.cs" />
+    <Compile Include="src\Parser.cs" />
+    <Compile Include="src\Response.cs" />
+    <Compile Include="src\ByteArrayConverter.cs" />
+    <Compile Include="src\DateTimeConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="readme.md" />
+  </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
   </ItemGroup>

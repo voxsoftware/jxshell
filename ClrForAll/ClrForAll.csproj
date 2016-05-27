@@ -3,10 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>JxShellBase</RootNamespace>
-    <AssemblyName>jxshell</AssemblyName>
+    <ProjectGuid>{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ClrForAll</RootNamespace>
+    <AssemblyName>ClrForAll</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -16,7 +17,7 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -24,25 +25,30 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\Newtonsoft.Json.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\csharplanguage.cs" />
-    <Compile Include="src\csharplanguageengine.cs" />
-    <Compile Include="src\language.cs" />
-    <Compile Include="src\languageengine.cs" />
-    <Compile Include="Properties\assembly.cs" />
-    <Compile Include="src\environment.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Executer.cs" />
+    <Compile Include="TypeLoader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="src\" />
+    <ProjectReference Include="..\JxShellBase\JxShellBase.csproj">
+      <Project>{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}</Project>
+      <Name>JxShellBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JxShellDotnet4\JxShellDotnet4.csproj">
+      <Project>{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}</Project>
+      <Name>JxShellDotnet4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPCJson\RPCJson.csproj">
+      <Project>{45F1400E-EE20-4B49-A432-6AC09C1C7170}</Project>
+      <Name>RPCJson</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -20,7 +20,7 @@ namespace jxshell.dotnet4
 		public PropertyInfo getPropertyForParameters(ref object[] parameters)
 		{
 			memberDescriptor.convertParameters(ref parameters);
-			Type[] typeArray = Type.GetTypeArray(parameters);
+			//Type[] typeArray = Type.GetTypeArray(parameters);
 			List<PropertyInfo> list = new List<PropertyInfo>(0);
 			bool flag = false;
 			StringBuilder stringBuilder = new StringBuilder();

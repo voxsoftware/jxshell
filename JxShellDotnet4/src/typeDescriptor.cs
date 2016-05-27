@@ -11,11 +11,8 @@ namespace jxshell.dotnet4
 	public class typeDescriptor
 	{
 		private Dictionary<string, methodDescriptor> instanceMethods = new Dictionary<string, methodDescriptor>();
-
 		private Dictionary<string, methodDescriptor> staticMethods = new Dictionary<string, methodDescriptor>();
-
 		private Dictionary<string, propertyDescriptor> instanceProperties = new Dictionary<string, propertyDescriptor>();
-
 		private Dictionary<string, propertyDescriptor> staticProperties = new Dictionary<string, propertyDescriptor>();
 
 		private Dictionary<string, fieldDescriptor> instanceFields = new Dictionary<string, fieldDescriptor>();

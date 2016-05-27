@@ -5,16 +5,28 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JxShellBase", "JxShellBase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JxShellDotnet4", "JxShellDotnet4\JxShellDotnet4.csproj", "{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPCJson", "RPCJson\RPCJson.csproj", "{45F1400E-EE20-4B49-A432-6AC09C1C7170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClrForAll", "ClrForAll\ClrForAll.csproj", "{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45F1400E-EE20-4B49-A432-6AC09C1C7170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F1400E-EE20-4B49-A432-6AC09C1C7170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F1400E-EE20-4B49-A432-6AC09C1C7170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F1400E-EE20-4B49-A432-6AC09C1C7170}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0FEEB6-7801-4839-BCC2-7920436F6E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDF4F75-9A02-4151-A51C-5935E8AE99C8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB6CED9-18E6-40D4-B9EE-46D8384C1A8F}.Release|Any CPU.ActiveCfg = Release|Any CPU

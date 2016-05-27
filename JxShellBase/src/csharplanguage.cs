@@ -35,7 +35,7 @@ namespace jxshell
 
 		public csharplanguage()
 		{
-			Dictionary<string, string> dictionary = new Dictionary<string, string>();
+			//Dictionary<string, string> dictionary = new Dictionary<string, string>();
 			this.cp = new CSharpCodeProvider();
 			this.p.GenerateInMemory = false;
 			this.p.GenerateExecutable = false;
@@ -82,7 +82,7 @@ namespace jxshell
 			{
 				num = csharplanguage.compilations[file];
 			}
-			catch (Exception var_1_16)
+			catch (Exception)
 			{
 			}
 			if (num == 0)
@@ -138,7 +138,7 @@ namespace jxshell
 						csharplanguage.compilations[file] = 1;
 						csharplanguage.compileds[file] = value;
 					}
-					catch (Exception var_16_1A1)
+					catch (Exception)
 					{
 						flag = true;
 					}
@@ -211,7 +211,7 @@ namespace jxshell
 			{
 				num += this.l.assemblies.Count;
 			}*/
-			int num2 = 0;
+			//int num2 = 0;
 			string[] array = new string[num];
 			for (int i = 0; i < environment.assemblies.Count; i++)
 			{
@@ -220,7 +220,7 @@ namespace jxshell
 					throw new Exception("No se pudo cargar uno o más ensamblados.");
 				}
 				array[i] = environment.assemblies[i].Location;
-				num2 = i + 1;
+				//num2 = i + 1;
 			}
 
 			/*

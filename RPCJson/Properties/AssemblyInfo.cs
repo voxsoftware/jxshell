@@ -4,14 +4,14 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("JxShellDotnet4")]
-[assembly: AssemblyDescription ("Reflexión mágica")]
+[assembly: AssemblyTitle ("RPCJson")]
+[assembly: AssemblyDescription ("Canal de comunicación JSON sobre la consola")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("VoxSoftware")]
-[assembly: AssemblyProduct ("JxShellDotnet4")]
+[assembly: AssemblyProduct ("RPCJson")]
 [assembly: AssemblyCopyright ("VoxSoftware 2016")]
-[assembly: AssemblyTrademark ("JxShellDotnet4")]
-[assembly: AssemblyCulture ("es")]
+[assembly: AssemblyTrademark ("")]
+[assembly: AssemblyCulture ("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
