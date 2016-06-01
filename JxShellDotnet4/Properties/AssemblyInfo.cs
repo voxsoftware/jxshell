@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyProduct ("JxShellDotnet4")]
 [assembly: AssemblyCopyright ("VoxSoftware 2016")]
 [assembly: AssemblyTrademark ("JxShellDotnet4")]
-[assembly: AssemblyCulture ("es")]
+[assembly: AssemblyCulture ("")]
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
